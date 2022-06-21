@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- welcome section -->
+<section class="container">
+  <div class="splash">
+    <img src="logo.png" class="logo" >
+    <h3 class="title fade-In">WELCOME !</h3>
+    <p class="title-2">POWERED BY HIGHVISION</p>
+  </div>
+  <div class="welcome">
+  </div>
+</section>
+
+<!-- language sec -->
+<div class="main">
+<div class="container2">
+
+  <div class="title-logo">LUNE</div>
+  <p>Please Choose Your Prefered Language</p>
+  <div class="main-buttons">
+      <button class="medium ui button" id="arabic">
+          اللغه العربية
+      </button>
+      <button class="medium ui button" id="english">
+          ENGLISH
+      </button>
+  </div>
+  </div>
+</div>
+</body>
+<script>
+/*Time Limited Splash Screen*/
+  const splash = document.querySelector(".container");
+  const main = document.querySelector(".main")
+  document.addEventListener('DOMContentLoaded' , (e)=> {
+    setTimeout(()=> {
+      splash.classList.add('display-none')
+      main.classList.add('active')
+
+    },2000)
+  })
+/*Radio Buttons*/
+const arabicBtn = document.getElementById('arabic');
+const englishBtn = document.getElementById('english');
+arabicBtn.addEventListener('click', ()=>{
+    window.location.href='./menu/arabivMenu.html'
+})
+englishBtn.addEventListener("click", () => {
+    window.location.href = "./menu/englishMenu.html";
+});
+</script>
+</html>

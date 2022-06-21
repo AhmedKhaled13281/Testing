@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:#10294C;
+  font-family: Inter , sans-serif;
+}
+.container{
+  width: 1100px;
+  margin: auto;
+}
+.container2{
+  width: 100%;
+  max-width: 122.5rem;
+  margin: auto;
+}
+.container.display-none{
+  display: none;
+}
+.logo{
+  display: block;
+  margin-top:70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.title , .title-2{
+  text-align: center;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 25px;
+  color:white;
+  margin-top:60px
+}
+.title-2{
+  font-size: 10px;
+  margin-top:15%;
+}
+/*After Splash Screen*/
+.main{
+  display: none;
+}
+.main.active{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color:#10294C;
+}
+.main img {
+    margin-bottom: 2rem;
+}
+.title-logo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: 100;
+  font-style: normal;
+  color:white;
+}
+.main p {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 15rem;
+    margin: 30px auto;
+    opacity: 0.8;
+}
+
+.main-buttons button{
+    background-color: #fff;
+    width: 7.2rem;
+    height: 2.5rem;
+    border-radius: 12px;
+    margin:10px;
+    font-weight: 700;
+}
+/*Animation The Welcome Page*/
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+}
+.fade-In{
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+/* Media Query For Tablets*/
+@media (max-width : 1024px){
+  .container{
+    width:70%;
+    margin-top: 40%;
+  }
+  .logo{
+    width: 70%;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .title-2{
+    margin-top: 40%;
+  }
+
+}
+
+/*Media Query For Phones*/
+@media (max-width : 575px){
+  .container{
+    width:50%
+  }
+  .logo{
+    width: 80%;
+  }
+  .title{
+    font-size: 15px;
+  }
+  .title-2{
+    margin-top: 100%;
+  }
+  .main-buttons button{
+  width: 6rem;
+  }
+
+}
+/*@media only screen and (max-width: 575px) {
+    .main-buttons button{
+    width: 6rem;
+    }
+}*/
